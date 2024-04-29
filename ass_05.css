@@ -1,0 +1,170 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 4px;
+    box-sizing: border-box;
+}
+.abhi{
+    position: relative;
+    display:block;
+}
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("a1.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+/* ################################################################### */
+
+div.gallery
+  {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    font-size: 18px;
+    box-sizing: border-box;
+    font-family: cursive;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+/* ################################################################### */
+h1::first-letter{
+    font-size: 40px;
+    font-family: cursive;
+    color: antiquewhite;
+}
+h1{
+    font-size: 25px;
+}
+p{
+    font-family: cursive;
+    color: #cfcccc;
+    font-size: 18px;
+}
+strong{
+    color: whitesmoke;
+}
+/* Container styles */
+.container {
+    display: block;
+    margin-top:100px;
+    flex-direction: column;
+    width: 100%;
+    /* margin: 20px; */
+    position: relative;
+}
+
+/* Header styles */
+.heading{
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333; /* Adding background color to header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adding shadow to header */
+    z-index: 1000; /* Ensuring header stays above other elements */
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+nav{
+    display: scroll;
+}
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Sidebar styles */
+aside {
+    width: 20%;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+aside ul {
+    list-style-type: none;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+aside ul li {
+    margin-bottom: 10px;
+}
+
+/* Main content styles */
+.container section {
+    margin-bottom: 30px;
+}
+
+.container section h2 {
+    color: #333;
+}
+
+/* Responsive styles */
+@media (max-width: 100%) {
+    .container {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+    }
+}
+h1{
+    color:#ddd;
+}
