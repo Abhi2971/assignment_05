@@ -1,0 +1,152 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    background-image: url("../../images/math.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.abhi {
+    position: relative;
+    display: block;
+}
+
+/* Header styles */
+.heading {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: #fff; /* White text color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.heading h1 {
+    font-size: 28px;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Yellow color on hover */
+}
+
+/* Sidebar styles */
+aside {
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    position: fixed;
+    top: 90px;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+aside ul {
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+/* Main content styles */
+.container {
+    margin-top: 100px; /* Adjust top margin to accommodate fixed header */
+    margin-left: 25%; /* Adjust left margin to accommodate sidebar */
+    padding: 20px;
+}
+
+.container section {
+    margin-bottom: 30px;
+}
+
+.container section h1 {
+    color: #b1b1b1;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.container section h1::first-letter{
+    font-size: 48px;
+    font-family: cursive;
+}
+.container section p {
+    color: #dad7d7;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Gallery styles */
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.gallery {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.gallery:hover {
+    border-color: #777;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery .desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}

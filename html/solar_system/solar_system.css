@@ -1,0 +1,101 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.abhi {
+    position: relative;
+    display: block;
+}
+
+/* Header styles */
+.heading {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    color: #fff; /* White text color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.heading h1 {
+    font-size: 28px;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Yellow color on hover */
+}
+
+/* Sidebar styles */
+aside {
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    padding: 20px;
+    position: fixed;
+    top: 80px; /* Adjust as needed */
+    bottom: 0;
+    overflow-y: auto;
+}
+
+aside ul {
+    list-style-type: none;
+    margin-top: 15px;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+/* Main content styles */
+.container {
+    margin-top: 100px; /* Adjust top margin to accommodate fixed header */
+    margin-left: 25%; /* Adjust left margin to accommodate sidebar */
+    padding: 20px;
+}
+
+.container section {
+    margin-bottom: 30px;
+}
+
+.container section h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.container section p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+}
