@@ -1,4 +1,3 @@
-<!-- Scripts -->
     function toggleSection(sectionId) {
         var section = document.getElementById(sectionId);
         var otherSections = document.querySelectorAll('.container section[id]:not(#' + sectionId + ')');
